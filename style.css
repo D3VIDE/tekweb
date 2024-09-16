@@ -1,0 +1,35 @@
+.img{
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  padding-top: 6em;
+}
+
+.img img{
+  height: 150px;
+  width: 150px;
+  cursor: pointer;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+
+.img img:hover:not(.fullscreen){
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.fullscreen {
+  transform: scale(4);
+  z-index: 10;
+  position: relative;
+  -webkit-transform: scale(4);
+  -moz-transform: scale(4);
+  -ms-transform: scale(4);
+  -o-transform: scale(4);
+}
